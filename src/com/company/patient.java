@@ -20,7 +20,9 @@ public class patient {
     // METHODS
 
     public void consultation(int consultation_num, String name , String lastName, int age  , dossier_medical dossier_medical){
-       dossier_medical.consultations[consultation_num] = new fiche_medicale();
+        float taille , poids , indice_corporel , densite_os;
+        // make the user set those values
+       dossier_medical.consultations[consultation_num] = new fiche_medicale(taille, indice_corporel,densite_os);
 
        return ;
     }
