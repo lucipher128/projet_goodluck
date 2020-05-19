@@ -1,7 +1,7 @@
 package com.company;
 
 public class comptabilite {
-    //
+//privates
     private float caisses;
     private float depenses;
     private float gains;
@@ -11,10 +11,9 @@ public class comptabilite {
     private float prec_dec;
 
 
-    //METHODS
+//METHODS
 
 // setters
-
     public void setCaisses(float caisses) {
         this.caisses = caisses;
     }
@@ -26,7 +25,6 @@ public class comptabilite {
     }
 
 // getters
-
     public float getLoss(){
         return loss;
     }
@@ -39,8 +37,8 @@ public class comptabilite {
     public boolean isIsok(){
         return isok;
     }
-    //les vrais methodes
 
+//les vrais methodes
     public void evalLoss(){
 
     }
