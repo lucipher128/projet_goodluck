@@ -1,6 +1,9 @@
 package com.company;
 
-public class fiche_mediale {
+public class fiche_medicale {
+   private float taille;
+   private float indice_corporel;
+   private float densité_os ;
 
 
 
@@ -8,7 +11,8 @@ public class fiche_mediale {
 
 
 
-    public fiche_mediale(){
+    public fiche_medicale(){
+
 
     }
 }
