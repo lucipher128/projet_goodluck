@@ -27,16 +27,16 @@ public class comptabilite {
 
 // getters
 
-    public float getLoss() {
+    public float getLoss(){
         return loss;
     }
-    public float getPerc_inc() {
+    public float getPerc_inc(){
         return perc_inc;
     }
-    public float getPrec_dec() {
+    public float getPrec_dec(){
         return prec_dec;
     }
-    public boolean isIsok() {
+    public boolean isIsok(){
         return isok;
     }
     //les vrais methodes
