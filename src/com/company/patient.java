@@ -10,6 +10,8 @@ public class patient {
     private int consultation_num;
     private dossier_medical dossier = new dossier_medical();
 
+// CONSTRUCTORS
+
     public patient(String name , String lastName , int age , int consultation_num){
         this.age = age ;
         this.name = name ;
