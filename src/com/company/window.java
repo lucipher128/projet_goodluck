@@ -6,14 +6,28 @@ import java.awt.*;
 public class window extends Frame {
 
     public window(){
-        setName("new frame ");
-        TextField t;
-        t = new TextField("write me ");
-        t.setBounds(50,100,200,30);
-        add(t);
-        Button b = new Button("click me ");
-        b.setBounds(30,30,50,15);
-        add(b);
+
+        MenuBar bar = new MenuBar();
+        Menu menu = new Menu("Menu");
+        Menu patient = new Menu("patient");
+
+        MenuItem comptabilite = new MenuItem("comptabilite");
+        MenuItem rdv= new MenuItem("rendez-vous");
+        MenuItem dossier = new MenuItem("dossier medical");
+        MenuItem fiche = new MenuItem("fiche medicale");
+
+
+
+        menu.add(comptabilite);
+        menu.add(rdv);
+        menu.add(patient);
+
+        setMenuBar(bar);
+
+        patient.add(fiche);
+        patient.add(dossier);
+        bar.add(menu);
+
         setSize(900,350);
         setLayout(null);
         setVisible(true);
