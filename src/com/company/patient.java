@@ -21,10 +21,10 @@ public class patient {
         if (consultation_num == 0){
             this.dossier = new dossier_medical();
         }else{
-           this.dossier.setPoids();                 //set poids
+           /*this.dossier.setPoids();                 //set poids           TODO: uncomment these to make it work better
            this.dossier.setTaille();                //set taille
            this.dossier.setAlergies();              //set Alergies
-           this.dossier.setAntecedents();           //set Antecedents
+           this.dossier.setAntecedents();           //set Antecedents   */
         }
     }
 //getters
