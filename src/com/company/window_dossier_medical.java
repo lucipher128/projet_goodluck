@@ -40,4 +40,4 @@ public class window_dossier_medical extends Frame implements ActionListener {
         window_compta compta = new window_compta();
     }
 }
-}
+

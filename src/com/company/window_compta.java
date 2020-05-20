@@ -18,8 +18,6 @@ public class window_compta extends Frame implements ActionListener {
         MenuItem dossier = new MenuItem("dossier medical");
         MenuItem fiche = new MenuItem("fiche medicale");
 
-
-
         menu.add(comptabilite);
         menu.add(rdv);
         menu.add(patient);
@@ -31,12 +29,12 @@ public class window_compta extends Frame implements ActionListener {
         bar.add(menu);
 
         comptabilite.addActionListener(this);
+        patient.addActionListener(this);
+        rdv.addActionListener(this);
+        fiche.addActionListener(this);
+        dossier.addActionListener(this);
         setSize(900,350);
         setLayout(null);
         setVisible(true);
-    }
-    @Override
-    public void actionPerformed(ActionEvent a){
-
     }
 }
