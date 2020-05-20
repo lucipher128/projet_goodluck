@@ -1,9 +1,11 @@
 package com.company;
 
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 
-public class window extends Frame {
+public class window extends Frame implements ActionListener {
 
     public window(){
 
@@ -28,8 +30,15 @@ public class window extends Frame {
         patient.add(dossier);
         bar.add(menu);
 
+        comptabilite.addActionListener(this);
         setSize(900,350);
         setLayout(null);
         setVisible(true);
+    }
+
+    @Override
+    public void actionPerformed(ActionEvent e){
+        this.dispose();
+        window_compta compta = new window_compta();
     }
 }
